@@ -1,9 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-align: center;
+  font-size: 48px;
+  min-height: 3em;
+}
+div {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  min-height: 1em;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
 <h1>New project</h1>
 
-<%= render "form", project: @project %>
-
-<br>
+<div>
+  <%= render "form", project: @project %>
+  <br>
+</div>
 
 <div>
   <%= link_to "Back to projects", projects_path %>
 </div>
+
+</body>
+</html>
