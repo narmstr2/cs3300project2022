@@ -4,8 +4,10 @@
 <style>
 h1 {
   text-align: center;
-  font-size: 48px;
-  min-height: 3em;
+  font-size: 56px;
+  min-height: 1em;
+  color: DarkBlue;
+  font-style: italic;
 }
 div {
   text-align: center;
@@ -14,11 +16,30 @@ div {
   min-height: 1em;
   padding: 10px;
 }
+button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 300px;
+}
 </style>
 </head>
 <body>
 
-<h1>New project</h1>
+<h1><strong> New project <strong></h1>
+
+<img src="https://web-static.wrike.com/blog/content/uploads/2020/02/Top-Tips-for-Implementing-New-Project-Management-Software.jpg?av=b3b86ef0fe2287c2aca4c16c59c53d82" alt="New idea"> 
 
 <div>
   <%= render "form", project: @project %>
@@ -26,7 +47,7 @@ div {
 </div>
 
 <div>
-  <%= link_to "Back to projects", projects_path %>
+  <%= button_to "<<  Back to projects", projects_path %>
 </div>
 
 </body>
